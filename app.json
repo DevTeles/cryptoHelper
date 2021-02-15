@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "crypto-helper",
+    "name": "Crypto Helper",
     "slug": "crypto-helper",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,6 +11,7 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
+      "enabled": true,
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [

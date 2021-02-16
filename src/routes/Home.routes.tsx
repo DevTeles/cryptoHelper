@@ -13,38 +13,41 @@ const HomeRoutes: React.FC = () => {
   return (
     <TabsNavigator.Navigator
       tabBarOptions={{
-        activeTintColor: '#00CC83',
-        activeBackgroundColor: 'rgba(244, 156, 0, 0.2)',
+        activeTintColor: '#181818',
+        activeBackgroundColor: '#fff',
         iactiveTintColor: '#00CC83 ',
       }}
       appearence={{
         tabBarBackground: '#1B1C21',
+        dotCornerRadius: 10,
       }}
     >
       <TabsNavigator.Screen
         name="TableCoins"
         component={TableCoins}
         options={{
-          tabBarIcon: ({ focused, color, size }: any) => {
+          title: 'Cotações',
+          tabBarIcon: ({ focused, color, size }: any) => (
             <FontAwesome5
               name="chart-area"
               size={size || 24}
               color={focused ? color : notActiveColor}
-            />;
-          },
+            />
+          ),
         }}
       />
       <TabsNavigator.Screen
         name="Discover"
         component={Discover}
         options={{
-          tabBarIcon: ({ focused, color, size }: any) => {
+          title: 'Noticias',
+          tabBarIcon: ({ focused, color, size }: any) => (
             <FontAwesome5
               name="compass"
               size={size || 24}
               color={focused ? color : notActiveColor}
-            />;
-          },
+            />
+          ),
         }}
       />
     </TabsNavigator.Navigator>

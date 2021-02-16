@@ -59,10 +59,10 @@ module.exports = {
     '@typescript-eslint/func-call-spacing': ['warn', 'never'], // No spaces on function calls
     '@typescript-eslint/quotes': ['warn', 'single', { avoidEscape: true }], // Single quotes only
     '@typescript-eslint/typedef': ['warn', { arrowParameter: false }], // Require type definitions except on arrow functions
-    '@typescript-eslint/type-annotation-spacing': [
-      'warn',
-      { before: false, after: true },
-    ], // Space on type annotations
+    // '@typescript-eslint/type-annotation-spacing': [
+    //   'warn',
+    //   { before: false, after: true },
+    // ], // Space on type annotations
     'simple-import-sort/sort': ['warn'], // Force import ordering
     'no-console': ['warn'], // No console.log
 
@@ -76,7 +76,7 @@ module.exports = {
     'no-trailing-spaces': ['warn'], // No unnecessary spaces
     'no-multi-spaces': ['warn'], // No double spaces
     'object-curly-spacing': ['warn', 'always'], // Require spaces on single line objects
-    'array-bracket-spacing': ['warn', 'always'], // Require spaces on single line arrays
+    'array-bracket-spacing': 'off', // Require spaces on single line arrays
     'spaced-comment': ['warn', 'always'], // Require spaces on single line commments
     'space-before-blocks': ['warn', 'always'], // Require block spaces
     'comma-spacing': ['warn', { before: false, after: true }], // Require comma spacing
@@ -87,6 +87,7 @@ module.exports = {
     ], // Require key spaces
     'space-infix-ops': ['warn'], // Require spaces between math symbols
     '@typescript-eslint/no-unused-vars': 'off',
+    'no-extra-parens': 'off',
 
     //Requires JSDoc
     'require-jsdoc': [
